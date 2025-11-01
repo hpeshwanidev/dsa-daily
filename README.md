@@ -13,29 +13,6 @@ Welcome to my **DSA Practice Repository**, where I’m consistently solving **2�
 
 ---
 
-## 🧾 Plan Breakdown
-
-| Category | Problems | Status |
-|-----------|-----------|--------|
-| Arrays & Hashing | 22 | ⏳ In Progress |
-| Two Pointers | 14 | ⏳ In Progress |
-| Sliding Window | 11 | ⏳ In Progress |
-| Stack | 13 | ⏳ In Progress |
-| Binary Search | 7 | ⏳ In Progress |
-| Linked List | 12 | ⏳ In Progress |
-| Trees | 26 | ⏳ In Progress |
-| Tries | 4 | ⏳ In Progress |
-| Heap / Priority Queue | 9 | ⏳ In Progress |
-| Backtracking | 14 | ⏳ In Progress |
-| Graphs | 25 | ⏳ In Progress |
-| Dynamic Programming | 45 | ⏳ In Progress |
-| Greedy | 11 | ⏳ In Progress |
-| Intervals | 10 | ⏳ In Progress |
-| Math & Bit Manipulation | 7 | ⏳ In Progress |
-| **Total** | **250** | ⚙️ Ongoing |
-
----
-
 ## 📊 Progress Tracker
 
 | Metric | Count |
@@ -44,6 +21,34 @@ Welcome to my **DSA Practice Repository**, where I’m consistently solving **2�
 | 🔥 Current Streak | 0 days |
 | 📅 Start Date | November 2025 |
 | 🎯 Target Completion | April 2026 |
+| 🕓 Last Updated: YYYY-MM-DD HH:MM UTC |
+
+⏱️ *Progress auto-updates as I add new solutions!*
+
+---
+
+## 🎯 Categories Overview
+
+| Category | Total | Solved | Progress |
+|-----------|--------|---------|-----------|
+| Arrays & Hashing | 22 | 0 | ⚪ 0% |
+| Two Pointers | 14 | 0 | ⚪ 0% |
+| Sliding Window | 11 | 0 | ⚪ 0% |
+| Stack | 13 | 0 | ⚪ 0% |
+| Binary Search | 7 | 0 | ⚪ 0% |
+| Linked List | 12 | 0 | ⚪ 0% |
+| Trees | 26 | 0 | ⚪ 0% |
+| Tries | 4 | 0 | ⚪ 0% |
+| Heap | 9 | 0 | ⚪ 0% |
+| Backtracking | 14 | 0 | ⚪ 0% |
+| Graphs | 25 | 0 | ⚪ 0% |
+| Dynamic Programming | 45 | 0 | ⚪ 0% |
+| Greedy | 11 | 0 | ⚪ 0% |
+| Intervals | 10 | 0 | ⚪ 0% |
+| Math & Bit | 7 | 0 | ⚪ 0% |
+| **Total** | **250** | **0** | ⚙️ Ongoing |
+
+---
 
 > ⏱️ *Progress auto-updates as I add new solutions!*
 
