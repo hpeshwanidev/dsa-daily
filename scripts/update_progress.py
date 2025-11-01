@@ -52,9 +52,50 @@ def generate_table(solved_counts):
     rows.append(f"| **Total** | **250** | **{sum(solved_counts.values())}** | ⚙️ Ongoing |")
     return "\n".join(rows)
 
-def update_readme(table, total_solved):
+ def update_readme(table, total_solved):
+    # Read README
     with open(README_PATH, "r", encoding="utf-8") as f:
         readme = f.read()
+
+    new_content = readme  # fallback — ensures variable always exists
+
+    # --- Replace the category table ---
+    if re.search(r"(\| Category \| Total \| Solved \| Progress \|)([\s\S]*?)(\n---)", readme):
+        new_content = re.sub(
+            r"(\| Category \| Total \| Solved \| Progress \|)([\s\S]*?)(\n---)",
+            f"\\1\n|-----------|--------|---------|-----------|\n{table}\\3",
+            readme,
+        )
+    else:
+        print("⚠️ Category table not found — skipping table update.")
+
+    # --- Update solved count ---
+    if re.search(r"(\| 🧠 Problems Solved \| )\d+ / 250", new_content):
+        new_content = re.sub(
+            r"(\| 🧠 Problems Solved \| )\d+ / 250",
+            r"\1" + f"{total_solved} / 250",
+            new_content
+        )
+    else:
+        print("⚠️ Solved count line not found — skipping count update.")
+
+    # --- Update last updated timestamp ---
+    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    if re.search(r"Last Updated: .*", new_content):
+        new_content = re.sub(
+            r"Last Updated: .*",
+            f"Last Updated: {now}",
+            new_content
+        )
+    else:
+        print("⚠️ Timestamp line not found — skipping date update.")
+
+    # --- Write back ---
+    with open(README_PATH, "w", encoding="utf-8") as f:
+        f.write(new_content)
+
+    print(f"✅ README updated successfully — {total_solved} problems solved.")
+
 
     # Replace the progress table
     new_content = re.sub(
