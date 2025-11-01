@@ -52,28 +52,22 @@ def generate_table(solved_counts):
     rows.append(f"| **Total** | **250** | **{sum(solved_counts.values())}** | ⚙️ Ongoing |")
     return "\n".join(rows)
 
- def update_readme(table, total_solved):
-    # Read README
+def update_readme(table, total_solved):
     with open(README_PATH, "r", encoding="utf-8") as f:
         readme = f.read()
 
-    new_content = readme  # fallback — ensures variable always exists
+    # Replace the progress table
+    new_content = re.sub(
+        r"(\| Category \| Total \| Solved \| Progress \|)([\s\S]*?)(\n---)",
+        f"\\1\n|-----------|--------|---------|-----------|\n{table}\\3",
+        readme,
+    )
 
-    # --- Replace the category table ---
-    if re.search(r"(\| Category \| Total \| Solved \| Progress \|)([\s\S]*?)(\n---)", readme):
-        new_content = re.sub(
-            r"(\| Category \| Total \| Solved \| Progress \|)([\s\S]*?)(\n---)",
-            f"\\1\n|-----------|--------|---------|-----------|\n{table}\\3",
-            readme,
-        )
-    else:
-        print("⚠️ Category table not found — skipping table update.")
-
-    # --- Update solved count ---
+    # --- Update solved count safely ---
     if re.search(r"(\| 🧠 Problems Solved \| )\d+ / 250", new_content):
         new_content = re.sub(
             r"(\| 🧠 Problems Solved \| )\d+ / 250",
-            r"\1" + f"{total_solved} / 250",
+            lambda m: f"{m.group(1)}{total_solved} / 250",
             new_content
         )
     else:
@@ -95,33 +89,6 @@ def generate_table(solved_counts):
         f.write(new_content)
 
     print(f"✅ README updated successfully — {total_solved} problems solved.")
-
-
-    # Replace the progress table
-    new_content = re.sub(
-    r"(\| 🧠 Problems Solved \| )\d+ / 250",
-    r"\1" + f"{total_solved} / 250",
-    new_content
-)
-
-
-    # Update solved count in tracker
-    new_content = re.sub(
-        r"(\| 🧠 Problems Solved \| )\d+ / 250",
-        f"\\1{total_solved} / 250",
-        new_content
-    )
-
-    # Update last updated time
-    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
-    new_content = re.sub(
-        r"Last Updated: .*",
-        f"Last Updated: {now}",
-        new_content
-    )
-
-    with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write(new_content)
 
 if __name__ == "__main__":
     solved_counts, total_solved = count_solved()
