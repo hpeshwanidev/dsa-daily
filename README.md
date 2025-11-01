@@ -17,21 +17,21 @@ Welcome to my **DSA Practice Repository**, where I’m consistently solving **2�
 
 | Category | Problems | Status |
 |-----------|-----------|--------|
-| Arrays & Hashing | 25 | ⏳ In Progress |
-| Two Pointers | 15 | ⏳ In Progress |
-| Sliding Window | 15 | ⏳ In Progress |
-| Stack | 15 | ⏳ In Progress |
-| Binary Search | 10 | ⏳ In Progress |
-| Linked List | 15 | ⏳ In Progress |
-| Trees | 25 | ⏳ In Progress |
-| Tries | 5 | ⏳ In Progress |
-| Heap / Priority Queue | 10 | ⏳ In Progress |
-| Backtracking | 20 | ⏳ In Progress |
+| Arrays & Hashing | 22 | ⏳ In Progress |
+| Two Pointers | 14 | ⏳ In Progress |
+| Sliding Window | 11 | ⏳ In Progress |
+| Stack | 13 | ⏳ In Progress |
+| Binary Search | 7 | ⏳ In Progress |
+| Linked List | 12 | ⏳ In Progress |
+| Trees | 26 | ⏳ In Progress |
+| Tries | 4 | ⏳ In Progress |
+| Heap / Priority Queue | 9 | ⏳ In Progress |
+| Backtracking | 14 | ⏳ In Progress |
 | Graphs | 25 | ⏳ In Progress |
-| Dynamic Programming | 30 | ⏳ In Progress |
-| Greedy | 10 | ⏳ In Progress |
+| Dynamic Programming | 45 | ⏳ In Progress |
+| Greedy | 11 | ⏳ In Progress |
 | Intervals | 10 | ⏳ In Progress |
-| Math & Bit Manipulation | 10 | ⏳ In Progress |
+| Math & Bit Manipulation | 7 | ⏳ In Progress |
 | **Total** | **250** | ⚙️ Ongoing |
 
 ---
