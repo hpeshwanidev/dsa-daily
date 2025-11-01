@@ -49,5 +49,27 @@ Welcome to my **DSA Practice Repository**, where I’m consistently solving **2�
 
 ---
 
-## 🧩 Repository Structure
+Each problem has its own folder with:
+- 🧠 **README.md** — Explanation, approach, complexity
+- 💻 **Code file** — Solution in Python/C++/Java
+- 🧪 **Example cases**
+
+---
+
+## 🧠 Example Entry
+
+**`problems/leetcode/easy/0001-two-sum/README.md`**
+```md
+# Two Sum — LeetCode #1
+🔗 [Problem Link](https://leetcode.com/problems/two-sum/)
+🧩 Difficulty: Easy
+
+## Approach
+- Use a hashmap to store complements.
+- Return indices once complement is found.
+
+## Complexity
+- Time: O(n)
+- Space: O(n)
+
 
