@@ -58,10 +58,11 @@ def update_readme(table, total_solved):
 
     # Replace the progress table
     new_content = re.sub(
-        r"(\| Category \| Total \| Solved \| Progress \|)([\s\S]*?)(\n---)",
-        f"\\1\n|-----------|--------|---------|-----------|\n{table}\\3",
-        readme,
-    )
+    r"(\| 🧠 Problems Solved \| )\d+ / 250",
+    r"\1" + f"{total_solved} / 250",
+    new_content
+)
+
 
     # Update solved count in tracker
     new_content = re.sub(
