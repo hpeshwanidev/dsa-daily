@@ -52,13 +52,12 @@ Welcome to my **DSA Practice Repository**, where I’m consistently solving **2�
 Each problem has its own folder with:
 - 🧠 **README.md** — Explanation, approach, complexity
 - 💻 **Code file** — Solution in Python/C++/Java
-- 🧪 **Example cases**
 
 ---
 
-## 🧠 Example Entry
+## 🧠 Example Entry 
 
-**`problems/leetcode/easy/0001-two-sum/README.md`**
+**`problems/leetcode/array-hashing/0001-two-sum/README.md`**
 ```md
 # Two Sum — LeetCode #1
 🔗 [Problem Link](https://leetcode.com/problems/two-sum/)
