@@ -17,11 +17,11 @@ Welcome to my **DSA Practice Repository**, where I’m consistently solving **2�
 
 | Metric | Count |
 |--------|-------|
-| 🧠 Problems Solved | 3 / 250 |
+| 🧠 Problems Solved | 4 / 250 |
 | 🔥 Current Streak | 0 days |
 | 📅 Start Date | November 2025 |
 | 🎯 Target Completion | April 2026 |
-| 🕓 Last Updated: 2025-11-12 04:33 UTC
+| 🕓 Last Updated: 2025-11-13 03:45 UTC
 
 ⏱️ *Progress auto-updates as I add new solutions!*
 
@@ -31,7 +31,7 @@ Welcome to my **DSA Practice Repository**, where I’m consistently solving **2�
 
 | Category | Total | Solved | Progress |
 |-----------|--------|---------|-----------|
-| Arrays Hashing | 22 | 3 | ⚪ 13% |
+| Arrays Hashing | 22 | 4 | ⚪ 18% |
 | Two Pointers | 14 | 0 | ⚪ 0% |
 | Sliding Window | 11 | 0 | ⚪ 0% |
 | Stack | 13 | 0 | ⚪ 0% |
@@ -46,7 +46,7 @@ Welcome to my **DSA Practice Repository**, where I’m consistently solving **2�
 | Greedy | 11 | 0 | ⚪ 0% |
 | Intervals | 10 | 0 | ⚪ 0% |
 | Math Bit | 7 | 0 | ⚪ 0% |
-| **Total** | **250** | **3** | ⚙️ Ongoing |
+| **Total** | **250** | **4** | ⚙️ Ongoing |
 ---
 
 Each problem has its own folder with:
