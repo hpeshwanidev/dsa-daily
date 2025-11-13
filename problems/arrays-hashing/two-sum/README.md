@@ -1,17 +1,16 @@
-# 🧩 Concatenation of Array — LeetCode #1929
+# 🎯 Two Sum — LeetCode #1
 
-🔗 **[View Problem](https://leetcode.com/problems/concatenation-of-array/)**  
+🔗 **[View Problem](https://leetcode.com/problems/two-sum/)**  
 💡 **Difficulty:** Easy  
 
 ---
 
 ## 🧠 Approach
 
-- Create a new array `result` of size `2 * n`, where `n` is the length of `nums`.  
-- Loop through the array and assign values:  
-  - `result[i] = nums[i]`  
-  - `result[i + n] = nums[i]`  
-- This effectively appends the array to itself, forming the concatenation.
+- Use a brute-force approach with two nested loops.  
+- For each element, check if there exists another element such that their sum equals the target.  
+- If found, return their indices as an integer array.  
+- If no such pair exists, return `[-1, -1]`.
 
 ---
 
@@ -19,7 +18,7 @@
 
 | Complexity | Description |
 |-------------|-------------|
-| **Time** | O(n) — iterate once through the array |
-| **Space** | O(2n) → O(n) — new array of double size |
+| **Time** | O(n²) — two nested loops compare each pair |
+| **Space** | O(1) — no additional data structures used |
 
 ---
