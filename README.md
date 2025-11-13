@@ -7,9 +7,9 @@ Welcome to my **DSA Practice Repository**, where I’m consistently solving **2�
 ## 🎯 Goal
 
 > 🧩 **Target:** Solve all **250 curated NeetCode problems**  
-> 📅 **Timeline:** Starting November 2025 — finishing within 5–6 months  
-> 💪 **Daily Routine:** 2–3 problems/day  
-> 🔄 **Frequency:** 6 days/week (rest day = review + notes)
+> 📅 **Timeline:** Starting November 2025 — planned to finish within 5–6 months  
+> 💪 **Daily Routine:** 1-2 problems/day  
+> 🔄 **Frequency:** 5 days/week 
 
 ---
 
